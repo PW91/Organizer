@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: 1px solid black;
+}
+
+.left_side_area {
+    height: 500px;
+    width: 300px;
+    padding: 0;
+    position: fixed;
+    -webkit-box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.35);
+    box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.35);
+    text-align: center;
+}
+
+h4 {
+    margin: 30px 0;
+    padding: 0;
+}
+
+h4 span {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    width: 200px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+#addTaskButton {
+    margin-top: 20px;
+    width: 214px;
+    height: 40px;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid black;
+}
+
+#removeFinishedTasksButton {
+    margin-top: 5px;
+    width: 214px;
+    height: 40px;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.right_side_area {
+    margin-left: 330px;
+    vertical-align: top;
+    padding-top: 1px; /*Do sprawdzenia*/
+}
+
+p {
+    margin: 200px 0 0 0;
+    padding: 0;
+    font-size: 15px;
+    font-style: italic;
+}
+
+h1 {
+    margin: 20px 0 5px 0;
+    padding: 0;
+}
+
+h6 {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+ul li button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: 2px solid black;
+    font-weight: bold;
+    background-color: white;
+}
+
+.completed {
+    color: lightgreen;
+}
