@@ -1,0 +1,24 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "To do list",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-sass": "^2.3.2",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PW91/To-do-list.git"
+  },
+  "author": "Przemyslaw Wieteska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PW91/To-do-list/issues"
+  },
+  "homepage": "https://github.com/PW91/To-do-list#readme"
+}

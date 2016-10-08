@@ -2,23 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Task Organizer</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
     <script src="js/app.js" type="text/javascript"></script>
 </head>
 </head>
 <body>
-    <div class="left_side_area">
-        <h4>TASKS TO FINISH: <span id="counter">0</span></h4>
-        <input id="taskInput" placeholder="Place your task here">
-        <input id="priorityInput" placeholder="Give it priority (0-10)">
-        <button id="addTaskButton">ADD TASK</button>
-        <button id="removeFinishedTasksButton">REMOVE FINISHED TASKS</button>
-        <p>Task Organizer</p>
-    </div>
-    <div class="right_side_area">
-        <ul id="taskList">
-        </ul>
+    <div class="container-960px">
+        <div class="organizer">
+            <h4>TASKS TO FINISH:</h4>
+            <p class="organizer-counter">0</p>
+            <form>
+                <label id="organizer-task-label">NEW TASK:</label>
+                <div class="organizer-form-wrapper">
+                    <textarea id="organizer-task-input" placeholder="Place your task here..."></textarea>
+                    <label id="organizer-category-label">CATEGORY:</label>
+                    <select id="organizer-category-input">
+                        <option value="none"></option>
+                        <option value="home">Home</option>
+                        <option value="work">Work</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label id="organizer-priority-label">PRIORITY:</label>
+                    <select id="organizer-priority-input">
+                        <option value="none"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <button id="organizer-add-task-button">ADD TASK</button>
+                <button id="organizer-remove-finished-tasks-button">REMOVE ALL FINISHED TASKS</button>
+            </form>
+        </div>
+        <div class="notes-container">  
+            <div class="note home-note selected" data-category="home">
+                <div class="note-trapezoid note-home-trapezoid">
+                    <p>HOME</p>
+                </div>
+                <div class="note-content">
+                    <ul class="note-content-task-list note-content-home-list">
+                    </ul>
+                </div>
+            </div>
+            <div class="note work-note" data-category="work">
+                <div class="note-trapezoid note-work-trapezoid">
+                    <p>WORK</p>
+                </div>
+                <div class="note-content">
+                    <ul class="note-content-task-list note-content-work-list">
+                    </ul>
+                </div>
+            </div>
+            <div class="note other-note" data-category="other">
+                <div class="note-trapezoid note-other-trapezoid">
+                    <p>OTHER</p>
+                </div>
+                <div class="note-content">
+                    <ul class="note-content-task-list note-content-other-list">
+                    </ul>
+                </div>
+            </div>-->
+        </div>
     </div>
 </body>
 </html>
